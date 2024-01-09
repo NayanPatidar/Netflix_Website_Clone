@@ -9,3 +9,66 @@ body {
     background-color: black;
     color: white;
 }
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../resources/images/header-image.png);
+    background-size: cover;
+    background-position: center; 
+    padding: 10px 8%;
+    position: relative;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 49px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.buttons button {
+    margin-right: 22px; 
+    width: 74px;
+    height: 32px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer; 
+
+}
+
+#English {
+    align-items: center; 
+    text-align: center;  
+    color: white;
+    background-color: transparent;
+    outline: 10px;
+    border-color: rgb(126, 126, 126);
+    border-width: 0.1%;
+    width: 125px;
+    font-size: 16px;
+}
+
+#English img {
+    width: 10px;
+    margin-left: 10px;
+    
+}
+
+#SignIn {
+    color: white;
+    font-size: 14px;
+    background-color: rgb(227, 0, 0);
+    border: none;
+
+}
+
+.Logo {
+    width: 150px;
+}
