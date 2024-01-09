@@ -10,7 +10,7 @@ body {
     color: white;
 }
 
-.header{
+.main{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../resources/images/header-image.png);
@@ -18,13 +18,16 @@ body {
     background-position: center; 
     padding: 10px 8%;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 14px 49px;
+    padding: 14px 4.9%;
 }
 
 .buttons {
@@ -34,8 +37,6 @@ body {
 }
 
 .buttons button {
-    margin-right: 22px; 
-    width: 74px;
     height: 32px;
     border: 1px solid #ffffff;
     border-radius: 4px;
@@ -44,6 +45,7 @@ body {
 }
 
 #English {
+    margin-right: 9.2%; 
     align-items: center; 
     text-align: center;  
     color: white;
@@ -51,17 +53,44 @@ body {
     outline: 10px;
     border-color: rgb(126, 126, 126);
     border-width: 0.1%;
-    width: 125px;
     font-size: 16px;
+    width: 125px;
 }
 
 #English img {
-    width: 10px;
+    width: 8px;
     margin-left: 10px;
-    
+}
+
+@media (max-width: 400px) {
+    #English {
+        padding: 10px; 
+        width: 74px;
+    }
+
+    #English img {
+        display: inline; 
+        width: 15px;
+    }
+
+    #English::before {
+        content: ''; 
+    }
+
+    #English::after {
+        content: ''; 
+        margin-left: 5px; 
+    }
+}
+
+@media (min-width: 401px) {
+    #English::before {
+        content: 'English'; 
+    }
 }
 
 #SignIn {
+    width: 74px;
     color: white;
     font-size: 14px;
     background-color: rgb(227, 0, 0);
@@ -70,5 +99,36 @@ body {
 }
 
 .Logo {
-    width: 150px;
+    width: 15.3%;
+    height: auto;
+    min-width: 100px;
+}
+
+.header-content {
+    /* background-color: aqua; */
+    top: 50%;
+    transform: translate(0, -50%);
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    /* max-width: 900px; */
+
+}
+
+.header-content h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 70px;
+}
+
+.header-content h2 {
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 70px;
+}
+
+.header-content h3 {
+    font-size: 20px;
+    font-weight: 80;
+    line-height: 50px;
 }
