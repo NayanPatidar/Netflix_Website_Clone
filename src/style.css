@@ -278,6 +278,19 @@ body {
         width: 75%;
         margin-top: 75px;
     }
+
+    .enjoyVideo {
+        position: absolute;
+        z-index: -1;
+        bottom: 85px;
+        left: 130px;
+        max-width: fit-content;
+    }
+    
+    .enjoyVideo video {
+        width: 75%;
+        height: 75%;
+    }
 }
 
 @media (max-width: 1251px) and (min-width: 1125px) {
@@ -296,6 +309,19 @@ body {
     .EnjoyTV {
         width: 75%;
         margin-top: 75px;
+    }
+
+    .enjoyVideo {
+        position: absolute;
+        z-index: -1;
+        bottom: 85px;
+        left: 130px;
+        max-width: fit-content;
+    }
+    
+    .enjoyVideo video {
+        width: 75%;
+        height: 75%;
     }
 }
 
@@ -324,13 +350,30 @@ body {
         /* margin-left: 50px; */
     }
 
-    .enjoyImage img {        
-        transform: translateX(17.5%);
-    }
-
     .EnjoyTV {
         width: 75%;
         margin-top: 10px;
     }
+
+    .enjoyVideo {
+        position: absolute;
+        z-index: -1;
+        transform: translateX(22%);
+        bottom: 7vh;
+    }
+    
+    .enjoyVideo video {
+        width: 55%;
+        object-fit: cover;
+
+    }
+}
+
+.enjoyImage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
 }
 
