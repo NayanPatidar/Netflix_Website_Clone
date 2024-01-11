@@ -10,6 +10,7 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
+
 }
 
 .main{
@@ -28,7 +29,7 @@ body {
 
 .main-nav {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     justify-content: space-between;
     padding: 14px 4.9%;
@@ -64,6 +65,18 @@ body {
 #English img {
     width: 8px;
     margin-left: 10px;
+}   
+
+@media (max-width: 300px) {
+    .main-nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 250px) {
+        body {
+            position: fixed;
+        }
 }
 
 @media (max-width: 400px) {
@@ -252,6 +265,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 75px;
 }
 
 .featureOne-Text {
@@ -385,6 +399,7 @@ body {
 }
 
 @media (max-width: 480px) {
+    
     .EnjoyTV {
         width: 75%;
         margin-top: 10px;
@@ -409,22 +424,22 @@ body {
     display: flex;
     justify-content:space-around;
     align-items: center;
-    margin-top: 175px;
     width: 100%;
-
-}
-
-.DownloadOnTV {
-    width: 65%;
-    transform: translateX(35%)
 
 }
 
 
 @media (min-width: 1250px) {
 
+    .DownloadOnTV {
+        width: 65%;
+        transform: translateX(35%)
+    
+    }
+
     .downlaodFeature {
         flex-direction: row;
+        margin-top: 175px;
     }
 
     .featureTwo-Text h2{
@@ -447,24 +462,89 @@ body {
 
 @media (max-width: 1125px) and (min-width: 480px) {
 
+    .downlaodFeature > div:nth-child(1) {
+        order: 2; 
+      }
+    
+    .downlaodFeature > div:nth-child(2) {
+      order: 1; 
+    }
+
+    .DownloadOnTV {
+        width: 65%;
+        transform: translateX(30%)
+    }
+
     .downlaodFeature {
         flex-direction: column;
+        margin-top: 175px;
+
     }
 
-    .EnjoyTV {
-        width: 75%;
-        margin-top: 10px;
-    }
-
-    .enjoyVideo {
-        position: absolute;
-        z-index: -1;
+    .featureTwo-Text h2 {
+        font-size: 35px;
+        font-weight: 900;
     }
     
-    .enjoyVideo video {
-        width: 87%;
-        padding-left: 13%;
-        bottom: 9vh;
+    .featureTwo-Text p {
+        font-size: 15px;
+        line-height: 30px;
+        /* text-align: center; */
+    }
+
+    .featureTwo-Text {
+        text-align: center;
+    }
+
+    .downloadImage {
+        margin-top: 50px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    .downlaodFeature > div:nth-child(1) {
+        order: 2; 
+      }
+    
+    .downlaodFeature > div:nth-child(2) {
+      order: 1; 
+    }
+
+    .DownloadOnTV {
+        width: 65%;
+        transform: translateX(30%)
+    }
+
+    .downlaodFeature {
+        flex-direction: column;
+        margin-top: 100px;
+        
+
+    }
+
+    .featureTwo-Text h2 {
+        font-size: 35px;
+        font-weight: 900;
+        max-width: 250px;
+        margin-left: 6%;
+    }
+    
+    .featureTwo-Text p {
+        font-size: 15px;
+        max-width: 250px;
+        margin-left: 6%;
+        /* line-height: 30px; */
+        /* text-align: center; */
+    }
+
+    .featureTwo-Text {
+        text-align: center;
+    }
+
+    .downloadImage {
+        margin-top: 50px;
     }
     
 }
