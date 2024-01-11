@@ -244,6 +244,9 @@ body {
 
 
 /* ------------------Features----------------- */
+
+
+/* ------------------Feature 1 ----------------- */
 .enjoyFeature {
     display: flex;
     flex-direction: row;
@@ -325,7 +328,7 @@ body {
     }
 }
 
-@media (max-width: 1126px) {
+@media (max-width: 1125px) {
     .enjoyFeature {
         flex-direction: column;
         align-items: center;
@@ -349,24 +352,6 @@ body {
         text-align: center;
         /* margin-left: 50px; */
     }
-
-    .EnjoyTV {
-        width: 75%;
-        margin-top: 10px;
-    }
-
-    .enjoyVideo {
-        position: absolute;
-        z-index: -1;
-        transform: translateX(22%);
-        bottom: 7vh;
-    }
-    
-    .enjoyVideo video {
-        width: 55%;
-        object-fit: cover;
-
-    }
 }
 
 .enjoyImage {
@@ -377,3 +362,69 @@ body {
     justify-content: space-evenly;
 }
 
+@media (max-width: 1125px) and (min-width: 480px) {
+    .EnjoyTV {
+        width: 75%;
+        margin-top: 10px;
+    }
+
+    .enjoyVideo {
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .enjoyVideo video {
+        width: 87%;
+        padding-left: 13%;
+        bottom: 9vh;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .EnjoyTV {
+        width: 75%;
+        margin-top: 10px;
+    }
+
+    .enjoyVideo {
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .enjoyVideo video {
+        width: 78%;
+        padding-left: 22%;
+        bottom: 9vh;
+    }
+    
+}
+
+/* ------------------Feature 2 ----------------- */
+
+.downlaodFeature {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-top: 175px;
+
+}
+
+.DownloadOnTV {
+    width: 65%;
+    transform: translateX(30%)
+
+}
+
+.featureTwo-Text h2{
+    font-size: 50px;
+    font-weight: 900;
+    max-width: 500px;
+}
+
+.featureTwo-Text {
+    transform: translateY(-20%);
+    /* margin-left: -80px; */
+    /* transform: translateX(-10%); */
+}
