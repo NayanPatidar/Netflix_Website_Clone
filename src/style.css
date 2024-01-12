@@ -845,10 +845,26 @@ body {
     margin-top: 175px;
     font-size: 21px;
 }
- 
-.faqs h2{
-    font-weight: 900;
-    font-size: 50px;
+
+@media (min-width: 1250px) {
+    .faqs h2{
+        font-weight: 900;
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1251px) and (min-width: 1125px) {
+    .faqs h2{
+        font-weight: 700;
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 1125px) {
+    .faqs h2{
+        font-weight: 900;
+        font-size: 35px;
+    }   
 }
 
 .accordion{
@@ -915,6 +931,7 @@ label::after{
 .mailing-section {
     text-align: center;
     font-size: 20px;
+    margin: 40px;
 }
 
 .mailing-signup {
@@ -966,5 +983,56 @@ label::after{
 
     .mailing-signup {
         flex-direction: row;
+    }
+}
+
+@media (min-width: 401px) {
+
+    .mailing-signup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .mailing-signup input::placeholder {
+        color: #ffffff;
+        font-size: 15px;
+        padding-left: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .mailing-signup input:focus::placeholder {
+        font-size: 10px; 
+        transform: translateY(-25%);
+        padding-left: 10px;
+        color: white;
+    }
+}
+
+@media (max-width: 801px){
+
+    #GetStartedButton {
+        width: 100px;
+        height: 32px;
+        color: white;
+        font-size: 15px;
+        background-color: rgb(227, 0, 0);
+        border: none;
+        border-radius: 4px;
+        margin-left: 10px;
+    }
+
+    .mailing-signup input {
+        color: white;
+        padding-left: 10px;
+        height: 32px;
+        width: 150px;
+        background-color: rgba(34, 34, 34, 0.699);
+        border-color: #ffffff;
+        border-width: 1px;
+        border-radius: 4px;
     }
 }
