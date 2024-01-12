@@ -841,20 +841,19 @@ body {
 
 .faqs {
     text-align: center;
-    padding: 100px 12%;
-    margin-top: 100px;
-    font-size: 18px;
+    padding: 10px 10%;
+    margin-top: 175px;
+    font-size: 21px;
 }
-
+ 
 .faqs h2{
     font-weight: 900;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .accordion{
-    margin: 60px auto;
     width: 100%;
-    max-width: 750px;
+    max-width: 1500px;
 }
 
 .accordion li {
@@ -867,37 +866,45 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
-    font-size: 18px;
-    font-weight: 500px;
+    font-size: 21px;
+    font-weight: 500;
     margin-bottom: 2px;
     background: #303030;
     cursor: pointer;
     position: relative;
 }
 
-.accordion p {
+ .accordion p {
     background-color: #303030;
 }
 
 .faqs ul li input[type="radio"] {
     display: none;
 }
-
+ 
 label::after{
     content:'+';
     font-size: 34px;
     position: absolute;
     right: 20px;
+    transition: transform 0.5s;
 }
 
 .accordion .content {
-    text-align: left;
-    /* padding: 0 20px; */
     max-height: 0;
+    text-align: left;
+    padding: 0 20px;
+    background: #303030;
+    /* padding-top: 20px; */
     overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
 }
 
 .accordion input[type="radio"]:checked + label + .content{
     max-height: 600px;
-    padding: 5px 20px;
-}
+    padding: 20px 20px;
+}  
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}  
