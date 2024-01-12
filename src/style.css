@@ -1036,3 +1036,54 @@ label::after{
         border-radius: 4px;
     }
 }
+
+/* ---------------------footer----------------------- */
+
+.footer h2 {
+    font-size: 16px;
+    font-weight: 100;
+    color: #c6c6c6;
+    margin-left: 10px;
+}
+
+.footer {
+    /* margin-top: 100px; */
+    padding: 50px 15% 10px;
+}
+
+.footer .row {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+
+}
+
+.col a {
+    padding: 5%;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    color: #c6c6c6;
+}
+
+.footer button {
+    height: 32px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer; 
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.footer p {
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #c6c6c6;
+}
