@@ -872,6 +872,7 @@ body {
     background: #303030;
     cursor: pointer;
     position: relative;
+    text-align: left;
 }
 
  .accordion p {
