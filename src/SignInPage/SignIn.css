@@ -46,7 +46,7 @@ body {
 /* -----------------SignIn Form----------------- */
 
 .headerContent {
-    width: 35%;
+    width: 450px;
     height: 60%;
     align-self: center;
     margin-top: 25px;
@@ -57,11 +57,23 @@ body {
     align-items: center;
 }
 
-.headerContent h2 {
+.headerContent .head h2 {
     width: 325px;
     margin-top: 60px;
     margin-bottom: 25px;
     font-size: 32px;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headerContent .forms input {
+    width: 325px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 10px;
+    background-color: #333333;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    
 }
