@@ -75,5 +75,32 @@ body {
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
-    
+}
+
+.email-signin input::placeholder {
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.email-signin input:focus::placeholder {
+    font-size: 10px; 
+    transform: translateY(-100%);
+    padding-left: 10px;
+    color: white;
+}
+
+.password input::placeholder {
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.password input:focus::placeholder {
+    font-size: 10px; 
+    transform: translateY(-100%);
+    padding-left: 10px;
+    color: white;
 }
