@@ -17,12 +17,12 @@ body {
 /* --------------------Background---------------- */
 
 .main {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../../resources/images/header-image-2.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../../resources/images/header-image-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-position-x: left;
-    height: 160vh;
+    height: 195vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -47,23 +47,34 @@ body {
 
 .headerContent {
     width: 450px;
-    height: 60%;
+    height: 660px;
     align-self: center;
     margin-top: 25px;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.696);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.headerContent .head h2 {
+.headerContent h2 {
     width: 325px;
     margin-top: 60px;
     margin-bottom: 25px;
     font-size: 32px;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headerContent .forms input {
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 10px;
+    background-color: #333333;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
 }
 
 .headerContent .forms input {
@@ -75,32 +86,64 @@ body {
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
+    color: white;
 }
 
+
 .email-signin input::placeholder {
-    color: #ffffff;
+    color: #bababa;
     font-size: 15px;
-    padding-left: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
+
 }
 
 .email-signin input:focus::placeholder {
+    color: #bababa;
     font-size: 10px; 
-    transform: translateY(-100%);
-    padding-left: 10px;
-    color: white;
+    transform: translateY(-150%);
 }
 
 .password input::placeholder {
-    color: #ffffff;
+    color: #bababa;
     font-size: 15px;
-    padding-left: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
+
 }
 
 .password input:focus::placeholder {
+    color: #bababa;
     font-size: 10px; 
-    transform: translateY(-100%);
-    padding-left: 10px;
+    transform: translateY(-180%);
+}
+
+#SignIn {
+    width: 325px;
+    height: 50px;
     color: white;
+    font-size: 20px;
+    background-color: rgb(227, 0, 0);
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* --------------------User Choice ------------------ */
+
+.userChoice {
+    margin-top: 10px;
+    font-size: 12px;
+    width: 325px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.userChoice .rememberMe ul li {
+    list-style: none;
+    color: #b3b3b3;
+}
+
+.userChoice p {
+    color: #b3b3b3;
 }
