@@ -14,6 +14,10 @@ body {
     flex-direction: column;
 }
 
+
+@media (min-width: 800px) {
+
+
 /* --------------------Background---------------- */
 
 .main {
@@ -29,6 +33,7 @@ body {
 }
 
 /* ------------------Nav-Bar--------------- */
+
 
 .Logo {
     width: 175px;
@@ -75,19 +80,10 @@ body {
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
-}
-
-.headerContent .forms input {
-    width: 325px;
-    height: 50px;
-    font-size: 16px;
-    padding-left: 10px;
-    background-color: #333333;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
     color: white;
 }
+
+
 
 
 .email-signin input::placeholder {
@@ -166,6 +162,7 @@ body {
 
 /* -------------------Footer------------------ */
 
+
 .footer h2 {
     font-size: 16px;
     font-weight: 100;
@@ -178,20 +175,11 @@ body {
     margin-top: auto;
     height: 250px;
     font-weight: lighter;
+    padding-left: 90px;
+    padding-top: 30px;
+
 }
 
-
-@media (min-width: 500px){
-    .footer {
-        padding: 50px 15% 10px;
-    }
-}
-
-@media (max-width: 500px){
-    .footer {
-        padding: 50px 5% 10px;
-    }
-}
 .footer .row {
     display: flex;
     flex-direction: row;
@@ -208,7 +196,7 @@ body {
 
 .col a {
     padding: 5%;
-    font-size: 14px;
+    font-size: 10px;
     display: block;
     text-decoration: none;
     color: #737373;
@@ -229,5 +217,138 @@ body {
     font-weight: 100;
     color: #737373;
 }
+}
 
 
+@media (max-width: 801px) and (min-width: 250px) {
+    .headerContent {
+        width: 100%;
+        height: 460px;
+        align-self: center;
+        margin-top: 25px;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav {
+        margin-top: 15px;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    .Logo {
+        width: 25%;
+    }
+
+    
+/* -----------------SignIn Form----------------- */
+
+.headerContent {
+    width: 100%; 
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+.Head {
+    width: 100%;
+    padding-left: 40px;
+}
+
+.forms {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 40px;
+}
+
+.headerContent h2 {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 500;
+    align-self: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headerContent .forms input {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 5px;
+    background-color: #333333;
+    border: none;
+    padding-left: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.email-signin input::placeholder {
+    color: #bababa;
+    font-size: 15px;
+    transition: all 0.1s ease;
+
+}
+
+.email-signin input:focus::placeholder {
+    color: #bababa;
+    font-size: 10px; 
+    transform: translateY(-120%);
+}
+
+.password input::placeholder {
+    color: #bababa;
+    font-size: 15px;
+    transition: all 0.1s ease;
+
+}
+
+.password input:focus::placeholder {
+    color: #bababa;
+    font-size: 10px; 
+    transform: translateY(-120%);
+}
+
+#SignIn {
+    width: 50%;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(227, 0, 0);
+    border: none;
+    border-radius: 4px;
+    
+    margin-top: 30px;
+}
+
+/* -------------------Extra Details----------------- */
+.ExtraDetails {
+    align-items: center;
+}
+
+.ExtraDetails .SignUp p{
+    width:  325px;
+    margin-top: 60px;
+    font-size: 16px;
+    color: #737373;
+}
+
+.ExtraDetails p{
+    padding-top: 10px;
+    width:  80%;
+    font-size: 13px;
+    color: #737373;
+    padding-left: 30px;
+}
+
+
+}
