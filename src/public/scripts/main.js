@@ -56,7 +56,11 @@ var signInButton = document.getElementById('SignIn');
 signInButton.addEventListener('click', () => {
     console.log("Clicked on the Sign In");
     if(signInButton.click){
+      if (window.location.pathname === '/in-hi'){
+        window.location.href = '/in-hi/login';
+      } else {
         window.location.href = '/in/login';
+      }
     }
 })
 
