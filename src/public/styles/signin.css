@@ -21,7 +21,7 @@ body {
 /* --------------------Background---------------- */
 
 .main {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../../resources/images/header-image-2.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("/images/header-image-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -72,7 +72,7 @@ body {
 }
 
 .headerContent .forms input {
-    width: 300px;
+    width: 325px;
     height: 50px;
     font-size: 16px;
     padding-left: 10px;
