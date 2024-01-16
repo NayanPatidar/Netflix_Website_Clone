@@ -39,7 +39,7 @@ body {
 .buttons {
     display: flex;
     justify-content: space-between;
-
+    width: 225px;
 }
 
 .buttons button {
@@ -151,12 +151,12 @@ body {
 
 @media (min-width: 401px) {
     #English::before {
-        content: 'English'; 
+        /* content: 'English';  */
     }
 }
 
 #SignIn {
-    width: 74px;
+    width: 90px;
     color: white;
     font-size: 14px;
     background-color: rgb(227, 0, 0);

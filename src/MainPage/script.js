@@ -16,8 +16,7 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
+window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
@@ -31,11 +30,33 @@ function myFunction() {
   }
 
 
+let languageButton = document.getElementById('English');
+
+  if (window.location.pathname === '/in') {
+    console.log("English Route");
+      if (window.innerWidth < 400) {
+        console.log("English View Less than 400px");
+        buttonElement.innerHTML = "";
+      } else {
+        languageButton.innerHTML = "English";
+      }
+
+  } else if (window.location.pathname === '/in-hi') {
+    console.log("Hindi Route");
+    if (window.innerWidth < 400) {
+      console.log("Hindi View Less than 400px");
+      buttonElement.innerHTML = "";
+    } else {
+      languageButton.innerHTML = "Hindi";
+    }
+  }
+  
+
 var signInButton = document.getElementById('SignIn');
 signInButton.addEventListener('click', () => {
     console.log("Clicked on the Sign In");
     if(signInButton.click){
-        window.location.href = '/SignIn';
+        window.location.href = '/in/login';
     }
 })
 
