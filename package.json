@@ -4,7 +4,8 @@
   "description": "This is a Netflix Clone having mutiple pages",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +13,8 @@
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "firebase": "^10.7.1",
-    "path": "^0.12.7"
+    "firebase-admin": "^12.0.0",
+    "path": "^0.12.7",
+    "zod": "^3.22.4"
   }
 }
