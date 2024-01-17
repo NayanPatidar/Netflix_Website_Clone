@@ -128,11 +128,6 @@ body {
     border: 1px solid red;
 }
 
-#password:focus {
-    border: 1px solid red;
-}
-
-
 /* --------------------User Choice ------------------ */
 
 .userChoice {

@@ -46,13 +46,15 @@
 
                     function signInWithEmailAndPassword() {
                     const email = document.getElementById('email').value;
-                    const password = document.getElementById('password').value;
+                    const passwordButton = document.getElementById('password');
+                    const password = passwordButton.value;
 
                     firebase.auth().signInWithEmailAndPassword(email, password)
                         .then((userCredential) => {
                             // Signed in
                             const user = userCredential.user;
-                            console.log("User signed in: ", user);
+                            console.log("You are signed in !!");
+                            password
                         })
                         .catch((error) => {
                             console.error("Error signing in: ", error);
