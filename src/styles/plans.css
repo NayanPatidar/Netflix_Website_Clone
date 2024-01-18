@@ -176,3 +176,61 @@ body {
     min-height: 83px;
     padding: 10px 16px;
 }
+
+.default-ltr-cache-42bcy3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+}
+
+.default-ltr-cache-1gwr2i2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.points {
+    margin-top: 10px;
+}
+
+.pointOne {
+    display: flex;
+    flex-direction: column;
+    min-height: 60px;
+    padding: 10px 16px;
+    margin: 8px;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.pointTwo, .pointThree, .pointFour, .pointFive {
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    padding: 10px 16px;
+    margin: 8px;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.pointSix {
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    padding: 10px 16px;
+    margin: 8px;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.MonthlyPrice {
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.PricePerMonth {
+    color: #4f4f4f;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
