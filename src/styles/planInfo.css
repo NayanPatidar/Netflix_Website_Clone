@@ -14,31 +14,58 @@ body {
     flex-direction: column;
 }
 
+@media (max-width: 280px) {
+        body {
+            position: fixed;
+        }
+}
+
 /* --------------------Background---------------- */
 
 .header {
     display: grid;
-    grid-template-columns: 400px 225px;
-    grid-template-rows: 175px;
+    grid-template-rows: 100px;
     justify-content: space-between;
     border-bottom: 1px solid;
     border-color: rgb(195, 195, 195);
 }
 
-#logo {
-    width: 400px;
-    padding-top: 50px;
-    padding-left: 60px;
+
+
+@media (min-width: 500px){
+
+    .header {
+        grid-template-columns: 200px 100px;
+    }
+
+    #logo {
+        width: 200px;
+        padding-top: 25px;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 500px){
+
+    .header {
+        grid-template-columns: 125px 100px;
+    }
+
+    #logo {
+        width: 150px;
+        padding-top: 35px;
+        padding-left: 30px;
+    }
 }
 
 .signout {
-    padding-top: 50px;
-    padding-right: 60px;
+    padding-top: 40px;
+    padding-left: 5px;
 }
 
 .signout a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 45px;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     color: rgb(41, 41, 41);
@@ -51,10 +78,10 @@ body {
 /* ------------------Body---------------- */
 
 .plan {
-    padding-top: 250px;
+    padding-top: 100px;
     display: grid;
-    grid-template-columns: 550px;
-    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 300px;
+    grid-template-rows: 60px 30px 30px 250px 100px;
     /* grid-template-rows: 175px 175px 175px 175px; */
     justify-content: center;
 }
@@ -62,15 +89,15 @@ body {
 .checkmark img{
     display: block;
     margin: auto;   
-    width: 100px; 
+    width: 50px; 
 }
 
 .step p{
-    margin-top: 60px;
+    /* margin-top: 10px; */
     color: rgb(33, 33, 33);
     text-align: center;
     width: 100%;
-    font-size: 25px;
+    font-size: 16px;
     font-family: 200;
 }
 
@@ -82,7 +109,7 @@ body {
     color: rgb(62, 62, 62);
     text-align: center;
     width: 100%;
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .choosePlan p{
@@ -97,9 +124,129 @@ ul {
     list-style-type: none; /* Remove default list decoration */
     padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
+    font-size: 15px;
+
 }
 
 ul li {
-    list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z" fill="currentColor"/></svg>'); /* Use the SVG path as list-style-image */
     margin-bottom: 10px; 
+}
+
+.checkmark-group--icon {
+    align-self: flex-start;
+    color: #e50914;
+    flex: none;
+    height: 26px;
+    width: 26px;
+}
+.checkmark-group--row {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    margin-top: 30px;
+    color: rgb(50, 50, 50);
+    letter-spacing: 2px;
+}
+
+.checkmark-group--row+.checkmark-group--row {
+    margin-top: 20px;
+}
+
+.data li svg {
+    margin-right: 10px;
+}
+
+#Next {
+    /* margin-top: 10px; */
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    color: white;
+    /* margin-bottom: 100px; */
+}
+
+#Next:active {
+    background-color: rgb(222, 0, 0);
+}
+
+/* -------------footer-------------- */
+
+.footer {
+    background-color: #e5e5e5;
+    margin-top: 150px;
+}
+
+.footer h2 {
+    font-weight: 100;
+    color: #6d6d6d;
+    margin-left: 10px;
+}
+
+@media (min-width: 500px){
+    .footer {
+        padding: 50px 5% 10px;
+    }
+
+    .footer .row .col a {
+        font-size: 16px;
+    }
+
+    .footer h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px){
+    .footer {
+        padding: 50px 5% 10px;
+    }
+    
+    .footer .row .col a {
+        font-size: 12px;
+    }
+
+    .footer h2 {
+        font-size: 12px;
+    }
+}
+.footer .row {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+
+}
+
+.col a {
+    padding: 5%;
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    color: #6d6d6d;
+}
+
+.footer button {
+    height: 32px;
+    border: 1px solid #6d6d6d;
+    border-radius: 4px;
+    cursor: pointer; 
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.footer p {
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #383838;
 }
