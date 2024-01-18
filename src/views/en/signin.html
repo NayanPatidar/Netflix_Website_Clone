@@ -45,7 +45,8 @@
                     firebase.initializeApp(firebaseConfig);
 
                     function signInWithEmailAndPassword() {
-                    const email = document.getElementById('email').value;
+                    const emailForm = document.getElementById('email');
+                    const email = emailForm.value;
                     const passwordButton = document.getElementById('password');
                     const password = passwordButton.value;
 
@@ -54,10 +55,14 @@
                             // Signed in
                             const user = userCredential.user;
                             console.log("You are signed in !!");
-                            password
                         })
                         .catch((error) => {
-                            console.error("Error signing in: ", error);
+                            passwordButton.style.border = '1px solid red';
+                            emailForm.style.border = '1px solid red';
+                            setTimeout(()=> {
+                                passwordButton.style.border = '0px solid black';  
+                                emailForm.style.border = '0px solid black';
+                            }, 3000);
                         });
                     }
 

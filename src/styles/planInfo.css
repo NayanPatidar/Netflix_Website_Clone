@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ---------------Body------------- */
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------------Background---------------- */
+
+.header {
+    display: grid;
+    grid-template-columns: 400px 225px;
+    grid-template-rows: 175px;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-color: rgb(195, 195, 195);
+}
+
+#logo {
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 60px;
+}
+
+.signout {
+    padding-top: 50px;
+    padding-right: 60px;
+}
+
+.signout a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
+
+.signout a:hover {
+    text-decoration:underline;
+}
+
+/* ------------------Body---------------- */
+
+.plan {
+    padding-top: 250px;
+    display: grid;
+    grid-template-columns: 550px;
+    grid-template-rows: 100px 100px 100px 100px;
+    /* grid-template-rows: 175px 175px 175px 175px; */
+    justify-content: center;
+}
+
+.checkmark img{
+    display: block;
+    margin: auto;   
+    width: 100px; 
+}
+
+.step p{
+    margin-top: 60px;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    font-family: 200;
+}
+
+.step {
+    margin: 0;
+}
+
+.choosePlan {
+    color: rgb(62, 62, 62);
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+}
+
+.choosePlan p{
+    font-weight: 600;
+}
+
+.data {
+    color: black;
+}
+
+ul {
+    list-style-type: none; /* Remove default list decoration */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+ul li {
+    list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z" fill="currentColor"/></svg>'); /* Use the SVG path as list-style-image */
+    margin-bottom: 10px; 
+}
