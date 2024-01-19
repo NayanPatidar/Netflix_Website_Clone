@@ -59,30 +59,31 @@ body {
     align-items: center;
 }
 
-.choosing {
-    width: 94%;
-    margin-top: 35px;
-}
-
-.choosing p{
-    margin-top: 10px;
-    color: rgb(52, 52, 52);
-    text-align: left;
-    width: 100%;
-    font-size: 16px;
-}
-
-#DescripPlans {
-    font-size: 32px;
-    font-weight: 600;
-}
-
-#Steps {
-    font-size: 12px;
-}
-
 /* ---------------plans-------------- */
 @media (min-width: 1000px) {
+
+    .choosing {
+        width: 94%;
+        margin-top: 35px;
+    }
+    
+    .choosing p{
+        margin-top: 10px;
+        color: rgb(52, 52, 52);
+        text-align: left;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    #DescripPlans {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    
+    #Steps {
+        font-size: 12px;
+    }
+
     .plans {
         display: flex;
         flex-direction: row;
@@ -241,8 +242,122 @@ body {
     } 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 100px) and (max-width: 1000px){
+
+    .choosing {
+        width: 55   0px;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
     
+    .choosing p{
+        margin-top: 10px;
+        color: rgb(52, 52, 52);
+        text-align: left;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    #DescripPlans {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    
+    #Steps {
+        font-size: 12px;
+    }
+
+    .plans {
+        border: 1px solid #6d6d6d;
+        width: 560px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 612px;
+        margin-top: 20px;
+    }
+
+    .premium {
+        width: 124px;
+        height: 107px;
+        border: 1px solid #949494;
+        border-radius: 20px;
+        user-select: none;
+    }
+
+
+    .standard {
+        width: 124px;
+        height: 107px;
+        border: 1px solid #949494;
+        border-radius: 20px;
+    }
+
+    .basic {
+        width: 124px;
+        height: 107px;
+        border: 1px solid #949494;
+        border-radius: 20px;
+    }
+
+    .mobile {
+        width: 124px;
+        height: 107px;
+        border: 1px solid #949494;
+        border-radius: 20px;
+    }
+
+    .Onephoto {
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(229, 9, 20) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        min-height: 107px;
+        padding: 10px 16px;    
+    }
+
+    .Twophoto {
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(176, 56, 220) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        min-height: 107px;
+        padding: 10px 16px;
+    }
+
+    .Threephoto {
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(109, 59, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        min-height: 107px;
+        padding: 10px 16px;
+    }
+
+    .Fourphoto {
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(33, 114, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        min-height: 107px;
+        padding: 10px 16px;
+    }
 }
 
 /* -----------terms------------ */
