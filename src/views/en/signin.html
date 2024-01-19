@@ -55,6 +55,7 @@
                             // Signed in
                             const user = userCredential.user;
                             console.log("You are signed in !!");
+                            window.location.href = "/signup";
                         })
                         .catch((error) => {
                             passwordButton.style.border = '1px solid red';
