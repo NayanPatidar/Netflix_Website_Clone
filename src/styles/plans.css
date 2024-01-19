@@ -268,43 +268,47 @@ body {
     }
 
     .plans {
-        border: 1px solid #6d6d6d;
         width: 560px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        height: 612px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 2500px;
         margin-top: 20px;
     }
 
     .premium {
-        width: 124px;
-        height: 107px;
+        width: 90%;
+        height: 612px;
         border: 1px solid #949494;
         border-radius: 20px;
-        user-select: none;
+        transition: box-shadow 0.5s ease;
+        padding-top: 10px;
     }
 
 
     .standard {
-        width: 124px;
-        height: 107px;
+        width: 90%;
+        height: 612px;
         border: 1px solid #949494;
         border-radius: 20px;
+        transition: box-shadow 0.5s ease;
     }
 
     .basic {
-        width: 124px;
-        height: 107px;
+        width: 90%;
+        height: 612px;
         border: 1px solid #949494;
         border-radius: 20px;
+        transition: box-shadow 0.5s ease;
     }
 
     .mobile {
-        width: 124px;
-        height: 107px;
+        width: 90%;
+        height: 612px;
         border: 1px solid #949494;
         border-radius: 20px;
+        transition: box-shadow 0.5s ease;
     }
 
     .Onephoto {
@@ -315,9 +319,10 @@ body {
         cursor: pointer;
         display: flex;
         flex-direction: column;
+        margin: 8px;
         background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(229, 9, 20) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
-        min-height: 107px;
-        padding: 10px 16px;    
+        min-height: 83px;
+        padding: 10px 16px;
     }
 
     .Twophoto {
@@ -328,8 +333,9 @@ body {
         cursor: pointer;
         display: flex;
         flex-direction: column;
+        margin: 8px;
         background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(176, 56, 220) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
-        min-height: 107px;
+        min-height: 83px;
         padding: 10px 16px;
     }
 
@@ -341,8 +347,9 @@ body {
         cursor: pointer;
         display: flex;
         flex-direction: column;
+        margin: 8px;
         background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(109, 59, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
-        min-height: 107px;
+        min-height: 83px;
         padding: 10px 16px;
     }
 
@@ -354,10 +361,69 @@ body {
         cursor: pointer;
         display: flex;
         flex-direction: column;
+        margin: 8px;
         background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(33, 114, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
-        min-height: 107px;
+        min-height: 83px;
         padding: 10px 16px;
     }
+
+    .default-ltr-cache-42bcy3 {
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.5;
+        color: white;
+    }
+
+    .default-ltr-cache-1gwr2i2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .points {
+        margin-top: 10px;
+    }
+
+    .pointOne {
+        display: flex;
+        flex-direction: column;
+        min-height: 60px;
+        padding: 10px 16px;
+        margin: 8px;
+        border-bottom: 1px solid #b5b5b5;
+    }
+
+    .pointTwo, .pointThree, .pointFour, .pointFive {
+        display: flex;
+        flex-direction: column;
+        min-height: 50px;
+        padding: 10px 16px;
+        margin: 8px;
+        border-bottom: 1px solid #b5b5b5;
+    }
+
+    .pointSix {
+        display: flex;
+        flex-direction: column;
+        min-height: 50px;
+        padding: 10px 16px;
+        margin: 8px;
+        border-bottom: 1px solid #b5b5b5;
+    }
+
+    .MonthlyPrice {
+        color: #6d6d6d;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .PricePerMonth {
+        color: #4f4f4f;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } 
 }
 
 /* -----------terms------------ */
