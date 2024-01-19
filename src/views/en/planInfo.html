@@ -13,7 +13,7 @@
             <img id="logo" src="../../assets/images/logo.png">
         </div>
         <div class="signout">
-            <a id="signIn" href="URL">Sign In</a>
+            <a id="signIn">Sign Out</a>
         </div>
     </div>
 
@@ -41,7 +41,7 @@
             </ul>
         </div>
         <div class="button">
-            <button id="Next">Next</button>
+            <button id="Next" onclick="signup()">Next</button>
         </div>
 
     </div>
@@ -69,6 +69,11 @@
             </div>
         </div>
     </div>
+    <script>
+        function signup(){
+            window.location.href = "/signup/planform";
+        }
+    </script>
 </body>
 </html>
 
