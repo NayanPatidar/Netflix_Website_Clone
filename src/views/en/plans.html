@@ -22,8 +22,8 @@
             <p id="DescripPlans">Choose the plan that’s right for you</p>
         </div>
 
-        <div class="plans">
-                <div class="premium">
+        <div class="plans" >
+                <div class="premium" id="plansContainer" onclick="getboxshadow(this)">
                     <div class="Onephoto">
                         <span class="default-ltr-cache-1gwr2i2">Premium</span>
                         <span class="default-ltr-cache-42bcy3">4K + HDR</span>
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="standard">
+                <div class="standard"  id="plansContainer" onclick="getboxshadow(this)">
                     <div class="Twophoto">
                         <span class="default-ltr-cache-1gwr2i2">Standard</span>
                         <span class="default-ltr-cache-42bcy3">1080p</span>
@@ -88,7 +88,7 @@
                     </div>
                 </div>    
                 
-                <div class="basic">
+                <div class="basic" id="plansContainer" onclick="getboxshadow(this)">
                     <div class="Threephoto">
                         <span class="default-ltr-cache-1gwr2i2">Basic</span>
                         <span class="default-ltr-cache-42bcy3">720p</span>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mobile">
+                <div class="mobile" id="plansContainer" onclick="getboxshadow(this)">
                     <div class="Fourphoto">
                         <span class="default-ltr-cache-1gwr2i2">Mobile</span>
                         <span class="default-ltr-cache-42bcy3">480p</span>
@@ -153,8 +153,21 @@
                     </div>
                 </div>
         </div>
+
+        <div class="extraDetails">
+            <div class="terms">
+                <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and
+                    device capabilities. Not all content is available in all resolutions.See our Terms of Use for more details.
+                    Only people who live with you may use your account. Watch on 4 different devices at the same time with
+                    Premium, 2 with Standard, and 1 with Basic and Mobile.
+                </p>
+            </div>
+            <div class="button">
+                <button id="Next">Next</button>
+            </div>
+        </div>
     </div>
-    <!-- <div class="footer">
+    <div class="footer">
         <h2>Questions? call 0101-0101-0101-0101</h2>
 
         <div class="row">
@@ -176,7 +189,9 @@
                     Terms of Use</a>
             </div>
         </div>
-    </div> -->
+    </div>
+
+    <script src="../../scripts/plans.js"></script>
 </body>
 </html>
 
