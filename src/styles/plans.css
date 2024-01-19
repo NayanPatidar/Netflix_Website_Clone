@@ -13,51 +13,63 @@ body {
     display: flex;
     flex-direction: column;
 }
+@media (min-width: 600px) {
 
-.header {
-    display: grid;
-    grid-template-rows: 90px;
-    justify-content: space-between;
-    border-bottom: 1px solid;
-    border-color: rgb(195, 195, 195);
-}
+    .header {
+        display: grid;
+        grid-template-rows: 90px;
+        justify-content: space-between;
+        border-bottom: 1px solid;
+        border-color: rgb(195, 195, 195);
+    }
 
-.header {
-    grid-template-columns: 200px 100px;
-}
+    .header {
+        grid-template-columns: 200px 100px;
+    }
 
-#logo {
-    width: 205px;
-    padding-top: 23px;
-    padding-left: 38px;
-}
+    #logo {
+        width: 205px;
+        padding-top: 23px;
+        padding-left: 38px;
+    }
 
 
-.signout {
-    padding-top: 35px;
-}
+    .signout {
+        padding-top: 35px;
+    }
 
-.signout a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    color: rgb(41, 41, 41);
-}
+    .signout a {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        color: rgb(41, 41, 41);
+    }
 
-.signout a:hover {
-    text-decoration:underline;
+    .signout a:hover {
+        text-decoration:underline;
+    }
 }
 
 /* ----------------Choosing----------------- */
 
-.maincontent {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 250px) {
+    .maincontent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+@media (max-width: 250px) {
+    body {
+        position: fixed;
+    }
+}
+
+
 
 /* ---------------plans-------------- */
 @media (min-width: 1000px) {
@@ -242,7 +254,7 @@ body {
     } 
 }
 
-@media (min-width: 100px) and (max-width: 1000px){
+@media (min-width: 600px) and (max-width: 1000px){
 
     .choosing {
         width: 55   0px;
@@ -426,6 +438,226 @@ body {
     } 
 }
 
+@media (max-width: 600px){
+
+    .choosing {
+        width: 90%;
+        margin-top: 35px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+    
+    .choosing p{
+        margin-top: 10px;
+        color: rgb(52, 52, 52);
+        text-align: left;
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    #DescripPlans {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    #Steps {
+        font-size: 12px;
+    }
+
+    .plans {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 2500px;
+        margin-top: 20px;
+    }
+
+    .premium {
+        width: 90%;
+        height: 612px;
+        border: 1px solid #949494;
+        border-radius: 20px;
+        transition: box-shadow 0.5s ease;
+        padding-top: 10px;
+    }
+
+
+    .standard {
+        width: 90%;
+        height: 612px;
+        border: 1px solid #949494;
+        border-radius: 20px;
+        transition: box-shadow 0.5s ease;
+    }
+
+    .basic {
+        width: 90%;
+        height: 612px;
+        border: 1px solid #949494;
+        border-radius: 20px;
+        transition: box-shadow 0.5s ease;
+    }
+
+    .mobile {
+        width: 90%;
+        height: 612px;
+        border: 1px solid #949494;
+        border-radius: 20px;
+        transition: box-shadow 0.5s ease;
+    }
+
+    .Onephoto {
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(229, 9, 20) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        min-height: 83px;
+        padding: 10px 16px;
+    }
+
+    .Twophoto {
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(176, 56, 220) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        min-height: 83px;
+        padding: 10px 16px;
+    }
+
+    .Threephoto {
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(109, 59, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        min-height: 83px;
+        padding: 10px 16px;
+    }
+
+    .Fourphoto {
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(33, 114, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        min-height: 83px;
+        padding: 10px 16px;
+    }
+
+    .default-ltr-cache-42bcy3 {
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.5;
+        color: white;
+    }
+
+    .default-ltr-cache-1gwr2i2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .points {
+        margin-top: 10px;
+    }
+
+    .pointOne {
+        display: flex;
+        flex-direction: column;
+        min-height: 60px;
+        padding: 10px 16px;
+        margin: 8px;
+        border-bottom: 1px solid #b5b5b5;
+    }
+
+    .pointTwo, .pointThree, .pointFour, .pointFive {
+        display: flex;
+        flex-direction: column;
+        min-height: 50px;
+        padding: 10px 16px;
+        margin: 8px;
+        border-bottom: 1px solid #b5b5b5;
+    }
+
+    .pointSix {
+        display: flex;
+        flex-direction: column;
+        min-height: 50px;
+        padding: 10px 16px;
+        margin: 8px;
+        border-bottom: 1px solid #b5b5b5;
+    }
+
+    .MonthlyPrice {
+        color: #6d6d6d;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .PricePerMonth {
+        color: #4f4f4f;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } 
+    
+    .header {
+        display: grid;
+        grid-template-rows: 90px;
+        justify-content: space-between;
+        border-bottom: 1px solid;
+        border-color: rgb(195, 195, 195);
+    }
+    
+    .header {
+        grid-template-columns: 130px 100px;
+    }
+    
+    #logo {
+        width: 100px;
+        padding-top: 35px;
+        padding-left: 15px;
+    }
+    
+    
+    .signout {
+        padding-top: 35px;
+    }
+    
+    .signout a {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        color: rgb(41, 41, 41);
+    }
+    
+    .signout a:hover {
+        text-decoration:underline;
+    }
+}
+
 /* -----------terms------------ */
 
 .terms p{
@@ -441,9 +673,10 @@ body {
 
 /* -----------Next Button ----------- */
 
+
+@media (min-width: 600px) {
+
 #Next {
-    /* margin-top: 10px; */
-    /* align-self: center; */
     width: 400px;
     height: 50px;
     background-color: red;
@@ -466,6 +699,35 @@ body {
     align-items: center;
     margin-bottom: 150px;
 }
+}
+
+@media (max-width: 600px) {
+    #Next {
+        /* margin-top: 10px; */
+        /* align-self: center; */
+        width: 200px;
+        height: 50px;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        font-size: 30px;
+        color: white;
+        /* margin-bottom: 100px; */
+    }
+    
+    #Next:active {
+        background-color: rgb(222, 0, 0);
+    }
+    
+    .extraDetails {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+    }
 
 
 .footer {
@@ -498,7 +760,7 @@ body {
     }
     
     .footer .row .col a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .footer h2 {
