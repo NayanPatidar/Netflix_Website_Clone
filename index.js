@@ -11,6 +11,8 @@ const signinRoute = require('./src/routes/sign');
 const signin_hiRoute = require('./src/routes/sign-hi');
 const plansInfo = require('./src/routes/plansInfo');
 const plans = require('./src/routes/plans');
+const signupInfo = require('./src/routes/signupInfo');
+const signup = require('./src/routes/signup');
 
 app.use('/', mainRoute);
 app.use('/', main_hiRoute);
@@ -18,6 +20,8 @@ app.use('/', signinRoute);
 app.use('/', signin_hiRoute);
 app.use('/', plansInfo);
 app.use('/', plans);
+app.use('/', signup);
+app.use('/', signupInfo);
 
 app.set('views', path.join(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs');
