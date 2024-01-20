@@ -81,19 +81,19 @@ body {
     padding-top: 100px;
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 60px 30px 30px 250px 100px;
+    grid-template-rows: 100px 30px 100px 100px 100px;
     justify-content: center;
 }
 
 .checkmark img{
     display: block;
     margin: auto;   
-    width: 50px; 
+    width: 250px; 
 }
 
 .step p{
     /* margin-top: 10px; */
-    color: rgb(33, 33, 33);
+    color: rgb(6, 6, 6);
     text-align: center;
     width: 100%;
     font-size: 16px;
@@ -116,13 +116,18 @@ body {
 }
 
 .data {
-    color: black;
+    color: rgb(27, 27, 27);
+    text-align: center;
+    justify-self: center;
+    width: 85%;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 ul {
-    list-style-type: none; /* Remove default list decoration */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
     font-size: 15px;
 
 }

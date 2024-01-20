@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <link rel="stylesheet" href="../../styles/signupInfo.css">
+    <link rel="stylesheet" href="../../styles/signup.css">
 </head>
 <body>
 
@@ -18,19 +18,25 @@
     </div>
 
     <div class="plan">
-        <div class="checkmark">
-            <img src="../../assets/images/signUp.png" alt="Devices">
-        </div>
         <div class="step">
             <p>STEP 1 OF 3</p>
         </div>
         <div class="choosePlan">
-            <p>Finish setting up your account</p>
+            <p>Create a password to start your membership</p>
         </div>
         <div class="data">
             <p>
-                Netflix is personalised for you. Create a password to watch on any device at any time.
+                Just a few more steps and you're done! We hate paperwork, too.
             </p>
+        </div>
+        <div class="forms">
+            <form class="email-signin" autocomplete="off">
+                <input type="email" id="email" placeholder="Email Address" required autocomplete="new-password">
+            </form>
+
+            <form class="password" autocomplete="off">
+                <input type="password" id="password" placeholder="Password" required autocomplete="new-password">
+            </form>
         </div>
         <div class="button">
             <button id="Next" onclick="signup()">Next</button>

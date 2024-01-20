@@ -78,35 +78,36 @@ body {
 /* ------------------Body---------------- */
 
 .plan {
-    padding-top: 100px;
+    padding-top: 40px;
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 60px 30px 30px 250px 100px;
+    grid-template-columns: 440px;
+    grid-template-rows: 20px 80px 60px 150px;
     justify-content: center;
 }
 
 .checkmark img{
     display: block;
     margin: auto;   
-    width: 50px; 
+    width: 250px; 
 }
 
 .step p{
     /* margin-top: 10px; */
-    color: rgb(33, 33, 33);
-    text-align: center;
+    color: rgb(6, 6, 6);
     width: 100%;
-    font-size: 16px;
+    font-size: 13px;
     font-family: 200;
 }
 
 .step {
     margin: 0;
+    text-align: left;
+
 }
 
 .choosePlan {
-    color: rgb(62, 62, 62);
-    text-align: center;
+    color: rgb(57, 57, 57);
+    text-align: left;
     width: 100%;
     font-size: 30px;
 }
@@ -116,13 +117,17 @@ body {
 }
 
 .data {
-    color: black;
+    color: rgb(27, 27, 27);
+    text-align: left;
+    width: 85%;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 ul {
-    list-style-type: none; /* Remove default list decoration */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
     font-size: 15px;
 
 }
@@ -172,6 +177,47 @@ ul li {
 #Next:active {
     background-color: rgb(222, 0, 0);
 }
+
+/* ----------------forms--------------- */
+
+.forms input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 10px;
+    background-color: #33333300;
+    margin-bottom: 10px;
+    border: 1px solid #383838;
+    border-radius: 5px;
+    color: rgb(41, 41, 41);
+}
+
+.email-signin input::placeholder {
+    color: #676767;
+    font-size: 15px;
+    transition: all 0.4s ease;
+
+}
+
+.email-signin input:focus::placeholder {
+    color: #676767;
+    font-size: 10px; 
+    transform: translateY(-150%);
+}
+
+.password input::placeholder {
+    color: #676767;
+    font-size: 15px;
+    transition: all 0.4s ease;
+
+}
+
+.password input:focus::placeholder {
+    color: #676767;
+    font-size: 10px; 
+    transform: translateY(-180%);
+}
+
 
 /* -------------footer-------------- */
 
