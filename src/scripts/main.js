@@ -64,8 +64,17 @@ signInButton.addEventListener('click', () => {
     }
 })
 
+
+
 function saveEmail() {
-  const email = document.getElementById("GetStarted").value;
-  sessionStorage.setItem('userEmail', email);
-  window.location.href = '/signup/form'; 
+  
+  const emailInput = document.getElementById("emailInput");
+  const email = emailInput.value.trim(); // Remove leading and trailing whitespaces
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address.");
+    return false; // Prevent form submission
+  }
+    window.location.href = '/signup/form'; 
 }
