@@ -26,9 +26,9 @@
             <h1>Unlimited movies, TV shows and more</h1>
             <h2>Watch anywhere. Cancel anytime.</h2>
             <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-            <form class="email-signup" autocomplete="off" >
-                <input type="email" placeholder="Email Address" required autocomplete="new-password">
-                <button id="GetStarted">Get Started ></button>
+            <form class="email-signup" id="signupForm">
+                <input type="email" id="emailInput" placeholder="Email Address" required>
+                <input id="GetStarted"  type="submit" value="Get Started" onclick="saveEmail()">
             </form>
         </div>
     </div>
@@ -197,7 +197,16 @@
     </div>
 
     <script src="../../scripts/main.js"></script>
-    <!-- <script src="script.js"></script>     -->
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
 
+        // const email = document.getElementById('emailInput').value;
+        const email = document.getElementById('emailInput').value;
+        console.log('Email submitted:', email);
+        sessionStorage.setItem('userEmail', email);
+
+    });
+    </script>
 </body>
 </html>

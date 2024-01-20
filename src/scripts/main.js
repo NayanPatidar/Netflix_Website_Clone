@@ -64,3 +64,8 @@ signInButton.addEventListener('click', () => {
     }
 })
 
+function saveEmail() {
+  const email = document.getElementById("GetStarted").value;
+  sessionStorage.setItem('userEmail', email);
+  window.location.href = '/signup/form'; 
+}
