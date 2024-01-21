@@ -14,7 +14,7 @@ body {
     flex-direction: column;
 }
 
-@media (max-width: 280px) {
+@media (max-width: 250px) {
         body {
             position: fixed;
         }
@@ -77,147 +77,291 @@ body {
 
 /* ------------------Body---------------- */
 
-.plan {
-    padding-top: 40px;
-    display: grid;
-    grid-template-columns: 440px;
-    grid-template-rows: 20px 80px 60px 150px;
-    justify-content: center;
+@media (min-width: 440px) {
+    .plan {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 440px;
+        grid-template-rows: 20px 80px 60px 150px;
+        justify-content: center;
+    }
+
+    .checkmark img{
+        display: block;
+        margin: auto;   
+        width: 250px; 
+    }
+
+    .step p{
+        /* margin-top: 10px; */
+        color: rgb(6, 6, 6);
+        width: 100%;
+        font-size: 13px;
+        font-family: 200;
+    }
+
+    .step {
+        margin: 0;
+        text-align: left;
+
+    }
+
+    .choosePlan {
+        color: rgb(57, 57, 57);
+        text-align: left;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .choosePlan p{
+        font-weight: 600;
+    }
+
+    .data {
+        color: rgb(27, 27, 27);
+        text-align: left;
+        width: 85%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0; 
+        margin: 0; 
+        font-size: 15px;
+
+    }
+
+    ul li {
+        margin-bottom: 10px; 
+    }
+
+    .checkmark-group--icon {
+        align-self: flex-start;
+        color: #e50914;
+        flex: none;
+        height: 26px;
+        width: 26px;
+    }
+    .checkmark-group--row {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0;
+        margin-top: 30px;
+        color: rgb(50, 50, 50);
+        letter-spacing: 2px;
+    }
+
+    .checkmark-group--row+.checkmark-group--row {
+        margin-top: 20px;
+    }
+
+    .data li svg {
+        margin-right: 10px;
+    }
+
+    #Next {
+        /* margin-top: 10px; */
+        width: 100%;
+        height: 60px;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        font-size: 30px;
+        color: white;
+        /* margin-bottom: 100px; */
+    }
+
+    #Next:active {
+        background-color: rgb(222, 0, 0);
+    }
+
+    /* ----------------forms--------------- */
+
+    .forms input {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        padding-left: 10px;
+        background-color: #33333300;
+        margin-bottom: 10px;
+        border: 1px solid #383838;
+        border-radius: 5px;
+        color: rgb(41, 41, 41);
+    }
+
+    .email-signin input::placeholder {
+        color: #676767;
+        font-size: 15px;
+        transition: all 0.4s ease;
+
+    }
+
+    .email-signin input:focus::placeholder {
+        color: #676767;
+        font-size: 10px; 
+        transform: translateY(-150%);
+    }
+
+    .password input::placeholder {
+        color: #676767;
+        font-size: 15px;
+        transition: all 0.4s ease;
+
+    }
+
+    .password input:focus::placeholder {
+        color: #676767;
+        font-size: 10px; 
+        transform: translateY(-180%);
+    }
 }
 
-.checkmark img{
-    display: block;
-    margin: auto;   
-    width: 250px; 
+@media ( (max-width: 440px) ) {
+    .plan {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 30px 110px 80px 150px;
+        justify-content: center;
+    }
+
+    .checkmark img{
+        display: block;
+        margin: auto;   
+        width: 250px; 
+    }
+
+    .step p{
+        /* margin-top: 10px; */
+        color: rgb(6, 6, 6);
+        width: 100%;
+        font-size: 13px;
+        font-family: 200;
+    }
+
+    .step {
+        margin: 0;
+        text-align: left;
+
+    }
+
+    .choosePlan {
+        color: rgb(57, 57, 57);
+        text-align: left;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .choosePlan p{
+        font-weight: 600;
+    }
+
+    .data {
+        color: rgb(27, 27, 27);
+        text-align: left;
+        width: 85%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0; 
+        margin: 0; 
+        font-size: 15px;
+
+    }
+
+    ul li {
+        margin-bottom: 10px; 
+    }
+
+    .checkmark-group--icon {
+        align-self: flex-start;
+        color: #e50914;
+        flex: none;
+        height: 26px;
+        width: 26px;
+    }
+    .checkmark-group--row {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0;
+        margin-top: 30px;
+        color: rgb(50, 50, 50);
+        letter-spacing: 2px;
+    }
+
+    .checkmark-group--row+.checkmark-group--row {
+        margin-top: 20px;
+    }
+
+    .data li svg {
+        margin-right: 10px;
+    }
+
+    #Next {
+        /* margin-top: 10px; */
+        width: 100%;
+        height: 60px;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        font-size: 30px;
+        color: white;
+        /* margin-bottom: 100px; */
+    }
+
+    #Next:active {
+        background-color: rgb(222, 0, 0);
+    }
+
+    /* ----------------forms--------------- */
+
+    .forms input {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        padding-left: 10px;
+        background-color: #33333300;
+        margin-bottom: 10px;
+        border: 1px solid #383838;
+        border-radius: 5px;
+        color: rgb(41, 41, 41);
+    }
+
+    .email-signin input::placeholder {
+        color: #676767;
+        font-size: 15px;
+        transition: all 0.4s ease;
+
+    }
+
+    .email-signin input:focus::placeholder {
+        color: #676767;
+        font-size: 10px; 
+        transform: translateY(-150%);
+    }
+
+    .password input::placeholder {
+        color: #676767;
+        font-size: 15px;
+        transition: all 0.4s ease;
+
+    }
+
+    .password input:focus::placeholder {
+        color: #676767;
+        font-size: 10px; 
+        transform: translateY(-180%);
+    }
 }
-
-.step p{
-    /* margin-top: 10px; */
-    color: rgb(6, 6, 6);
-    width: 100%;
-    font-size: 13px;
-    font-family: 200;
-}
-
-.step {
-    margin: 0;
-    text-align: left;
-
-}
-
-.choosePlan {
-    color: rgb(57, 57, 57);
-    text-align: left;
-    width: 100%;
-    font-size: 30px;
-}
-
-.choosePlan p{
-    font-weight: 600;
-}
-
-.data {
-    color: rgb(27, 27, 27);
-    text-align: left;
-    width: 85%;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0; 
-    margin: 0; 
-    font-size: 15px;
-
-}
-
-ul li {
-    margin-bottom: 10px; 
-}
-
-.checkmark-group--icon {
-    align-self: flex-start;
-    color: #e50914;
-    flex: none;
-    height: 26px;
-    width: 26px;
-}
-.checkmark-group--row {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 0;
-    margin-top: 30px;
-    color: rgb(50, 50, 50);
-    letter-spacing: 2px;
-}
-
-.checkmark-group--row+.checkmark-group--row {
-    margin-top: 20px;
-}
-
-.data li svg {
-    margin-right: 10px;
-}
-
-#Next {
-    /* margin-top: 10px; */
-    width: 100%;
-    height: 60px;
-    background-color: red;
-    border: none;
-    border-radius: 5px;
-    font-size: 30px;
-    color: white;
-    /* margin-bottom: 100px; */
-}
-
-#Next:active {
-    background-color: rgb(222, 0, 0);
-}
-
-/* ----------------forms--------------- */
-
-.forms input {
-    width: 100%;
-    height: 50px;
-    font-size: 16px;
-    padding-left: 10px;
-    background-color: #33333300;
-    margin-bottom: 10px;
-    border: 1px solid #383838;
-    border-radius: 5px;
-    color: rgb(41, 41, 41);
-}
-
-.email-signin input::placeholder {
-    color: #676767;
-    font-size: 15px;
-    transition: all 0.4s ease;
-
-}
-
-.email-signin input:focus::placeholder {
-    color: #676767;
-    font-size: 10px; 
-    transform: translateY(-150%);
-}
-
-.password input::placeholder {
-    color: #676767;
-    font-size: 15px;
-    transition: all 0.4s ease;
-
-}
-
-.password input:focus::placeholder {
-    color: #676767;
-    font-size: 10px; 
-    transform: translateY(-180%);
-}
-
 
 /* -------------footer-------------- */
 

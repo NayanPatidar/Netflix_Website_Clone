@@ -36,7 +36,7 @@ let languageButton = document.getElementById('English');
     console.log("English Route");
       if (window.innerWidth < 400) {
         console.log("English View Less than 400px");
-        buttonElement.innerHTML = "";
+        languageButton.innerHTML = "English";
       } else {
         languageButton.innerHTML = "English";
       }
@@ -45,24 +45,21 @@ let languageButton = document.getElementById('English');
     console.log("Hindi Route");
     if (window.innerWidth < 400) {
       console.log("Hindi View Less than 400px");
-      buttonElement.innerHTML = "";
+      languageButton.innerHTML = "Hindi";
     } else {
       languageButton.innerHTML = "Hindi";
     }
   }
   
 
-var signInButton = document.getElementById('SignIn');
-signInButton.addEventListener('click', () => {
-    console.log("Clicked on the Sign In");
-    if(signInButton.click){
-      if (window.location.pathname === '/in-hi'){
-        window.location.href = '/in-hi/login';
-      } else {
-        window.location.href = '/in/login';
-      }
+function signIn() {
+  console.log("Clicked on the Sign In");
+    if (window.location.pathname === '/in-hi'){
+      window.location.href = '/in-hi/login';
+    } else {
+      window.location.href = '/in/login';
     }
-})
+}
 
 
 
